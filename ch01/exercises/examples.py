@@ -59,3 +59,4 @@ pen2.forward(30)
 pen2.home()
 pen1.goto(0,0)
 window.exitonclick() #needs to be last of the turtle
+
