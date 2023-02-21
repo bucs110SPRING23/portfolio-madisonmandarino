@@ -8,8 +8,8 @@ mike = turtle.Turtle()
 don = turtle.Turtle()
 mike.shape("turtle")
 don.shape("turtle")
-mike.color("red")
-don.color("blue")
+mike.color("pink")
+don.color("navy")
 mike.up()
 don.up()
 mike.goto(-100,20)
@@ -50,5 +50,27 @@ window.exitonclick()
 #part b
 pygame.init()
 window = pygame.display.set_mode()
-window = fill("green")
-pygame.display.flip()
+window.fill("navy")
+pygame.time.wait(500)
+
+side_length = 100
+xpos = 300
+ypos = 200
+
+sides = [3,4,6,20,100,360]
+
+for sidenum in sides:
+    points = []
+    for i in range(sidenum):
+        angle = 360/sidenum
+        radians = math.radians(angle * i)
+        x = xpos + side_length * math.cos(radians)
+        y = ypos + side_length * math.sin(radians)
+        points.append([x,y])
+     
+    pygame.draw.polygon(window,"violet", (points))
+    pygame.display.flip()
+    pygame.time.wait(1500)
+    window.fill("navy")
+
+
