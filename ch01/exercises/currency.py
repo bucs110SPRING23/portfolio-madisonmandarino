@@ -1,0 +1,7 @@
+rate = input("What is the exchange rate from Euro to US Dollars? : ")
+num = int(rate)
+print(num)
+amount= input("How much do you want to exchange? : ")
+num2= int(amount)
+print(num2)
+print(num * num2 -3)
