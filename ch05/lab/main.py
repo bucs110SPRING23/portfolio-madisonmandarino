@@ -24,13 +24,17 @@ def graph_coordinates(threenplus1_iters_dict):
     pygame.display.init
     window = pygame.display.set_mode( )
     window.fill("lavender")
-    font = pygame.font.Font(None, 25)
-    coords = 
-
     new_display = pygame.transform.flip(window, False, True)
+    pygame.draw.lines(window,"black", False threenplus1_iters_dict)
     width, height = new_display.get_size()
-    new_display = pygame.transform.scale(new_display, (width * 0.1, height * 0.1))
+    new_display = pygame.transform.scale(new_display, (width * 0.5, height * 0.5))
+    window.blit(new_display, (0,0))
 
+    max_so_far = 0
+
+    
+   
+font = pygame.font.Font(None, 25)
 
 
 pygame.display.update()
